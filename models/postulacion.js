@@ -59,7 +59,7 @@ const Postulacion = {
 
     },
 
-    listaPostulante: async () => {
+    lista: async () => {
         try {
             const [rows] = await db.query('SELECT p.*, u.nombre, u.apellido FROM postulacion p JOIN usuario u ON p.candidato_id = u.id');
             console.log('postulaciones obtenidas:');
