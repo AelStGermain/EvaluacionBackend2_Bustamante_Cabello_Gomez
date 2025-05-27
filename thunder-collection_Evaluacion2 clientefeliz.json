@@ -1,0 +1,108 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Evaluacion2 clientefeliz",
+    "collectionId": "a7e65a13-4833-4712-b7c3-b01eb4d87285",
+    "dateExported": "2025-05-26T05:39:03.558Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6eaadf2c-4a22-447c-bd39-e537a6940907",
+            "colId": "a7e65a13-4833-4712-b7c3-b01eb4d87285",
+            "containerId": "",
+            "name": "creacionusuario",
+            "url": "http://localhost:3001/api/Usuarios/create",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2025-05-26T02:57:53.838Z",
+            "modified": "2025-05-26T04:15:56.724Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"nombre\":\"Raul\",\r\n  \"apellido\":\"Cabello\",\r\n  \"email\":\"RaulCabello@hotmail.com\",\r\n  \"contraseña\":\"977798450\",\r\n  \"fecha_nacimiento\":\"1996/01/15\",\r\n  \"telefono\":\"974568091\",\r\n  \"direccion\":\"Puente alto 170\",\r\n  \"rol\":\"reclutador\",\r\n  \"fecha_registro\":\"20/03/2025\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "792488cd-85a3-49c6-84b6-816ebd78c590",
+            "colId": "a7e65a13-4833-4712-b7c3-b01eb4d87285",
+            "containerId": "",
+            "name": "crearoferta",
+            "url": "http://localhost:3001/api/ofertasLaboral/crearOferta",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2025-05-26T04:18:19.058Z",
+            "modified": "2025-05-26T04:27:59.760Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"email\":\"FRB@gmail.com\",\r\n  \"contraseña\":\"2342\",\r\n  \"titulo\":\"Desarrollador Backend\",\r\n  \"descripcion\":\"Node.js y MYSQL \",\r\n  \"ubicacion\":\"Santiago\",\r\n  \"salario\":\"1200000\",\r\n  \"tipo_contrato\":\"1\",\r\n  \"fecha_publicacion\":\"2025/05/25\", \r\n  \"fecha_cierre\":\"2025/7/25\", \r\n  \"estado\":\"1\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b6b5484f-6a5a-4c5e-9105-79118bf71186",
+            "colId": "a7e65a13-4833-4712-b7c3-b01eb4d87285",
+            "containerId": "",
+            "name": "actualizaroferta",
+            "url": "localhost:3001/api/ofertasLaboral/updateOferta",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2025-05-26T04:29:10.227Z",
+            "modified": "2025-05-26T04:43:30.595Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"id\": \"1\",\r\n  \"email\": \"FRB@gmail.com\",\r\n  \"contraseña\": \"2342\",\r\n  \"estado\": \"1\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4afa342a-3854-44ef-9fa6-de6a98f0a22b",
+            "colId": "a7e65a13-4833-4712-b7c3-b01eb4d87285",
+            "containerId": "",
+            "name": "postulacioneslaborales",
+            "url": "localhost:3001/api/postulaciones/create",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2025-05-26T04:32:18.135Z",
+            "modified": "2025-05-26T04:49:03.869Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"candidato_id\":\"2\",\n  \"oferta_laboral_id\":\"1\",\n  \"estado_postulacion\":\"2\",\n  \"comentario\":\"Revisando Postulacion\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "63d2f2b0-4412-4533-aff4-b00cd64a3da3",
+            "colId": "a7e65a13-4833-4712-b7c3-b01eb4d87285",
+            "containerId": "",
+            "name": "verlistapostulacion",
+            "url": "localhost:3001/api/postulaciones/userPostulation",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2025-05-26T04:50:31.972Z",
+            "modified": "2025-05-26T05:18:05.839Z",
+            "headers": []
+        },
+        {
+            "_id": "808e5b2b-af40-45a0-8b75-bbbb92533437",
+            "colId": "a7e65a13-4833-4712-b7c3-b01eb4d87285",
+            "containerId": "",
+            "name": "eliminarusuario",
+            "url": "http://localhost:3001/api/Usuarios/remove",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2025-05-26T05:35:12.771Z",
+            "modified": "2025-05-26T05:38:15.026Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"3\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "U195rqjCaEZb1mXlSKHIY1e-OfZaxEqllSKCpWvKWB_UOgNy7uTQi0Ct3ii9Zad0czpaZZvL6TG0gDEpWoh5cQ"
+}
